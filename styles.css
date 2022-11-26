@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(247, 245, 241);
+    color: #343920;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    height: 190vh;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 15px;
+    color: #343920;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    position:sticky;
+}
+.logo {
+    cursor: pointer;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+
+}
+.nav_links li a:hover {
+    color:#5f6b35;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.cart-button {
+    padding: 9px 9px;
+    color:  #343920;
+    background-color: #ebeccb;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.cart-button:hover {
+    background-color: #d5d6b8;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    object-fit:cover;
+}
+.header-img{
+    height: 230px;
+    width: 230px;
+    object-fit:cover;
+    object-position: center;
+    margin-left: 10px;
+    margin-right: 60px;
+    padding: 6px;
+    border-bottom: solid;
+    border-width: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header-img:hover {
+    height: 235px;
+    width: 235px;
+}
+
+.shop-desc{
+    width: 350px;
+    min-width: 300px;
+    text-align: center;
+    margin-left: 30px;
+}
+.prev-btn, .next-btn{
+    border: none;
+    color:  #343920;
+    background-color: #ebeccb;
+    padding: 8px 12px;
+    border-radius: 100px;
+    margin: 7px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.prev-btn:hover, .next-btn:hover {
+    background-color: #d5d6b8;
+}
+.header-block{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebeccb;
+    height: 440px;
+}
+.store-info {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-sec-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+.menu-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.menu-sec-left, .menu-sec-mid, .menu-sec-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.item-img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 8px;   
+    object-fit:cover;
+    object-position: center;
+    /* border: solid; */
+    border-width: 1px;
+    box-shadow: 0px 0px 5px 1px #cfd1c7;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.item-img-on-effect{
+    height: 450px;
+    width: 450px; 
+    object-fit:cover;
+    object-position: center;
+}
+.img-effect{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6) ;
+    padding-top: 300px;
+}
+.img-effect:target{
+    outline: none;
+    display:flex;
+    justify-content: center;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.food-title, .food-price {
+    font-size: 16px;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.add, .minus{
+    border: none;
+    background-color: rgb(247, 245, 241);
+    padding: 4px 6px;
+    border-radius: 100px;
+    margin: 7px;
+    color:  #343920;
+    cursor: pointer;
+}
+.add:hover, .minus:hover{
+    color:  #798554;
+}
+.quantity{
+    font-size: 16px;
+}
+.add-to-cart {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #ebeccb;
+    color:#343920;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+.add-to-cart:hover{
+    background-color:#343920;
+    color: #ebeccb;
+}
